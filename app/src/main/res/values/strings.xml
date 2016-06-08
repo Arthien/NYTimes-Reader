@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">New York Times Reader</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="menu_tab_a">ARTICLES</string>
+    <string name="menu_tab_b">CATEGORIES</string>
+    <string name="menu_tab_c">SETTINGS</string>
+
+</resources>

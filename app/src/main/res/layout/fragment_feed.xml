@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:showDividers="none"
+    android:contextClickable="false">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_weight=".75"
+        android:src="@drawable/ic_politics"
+        android:adjustViewBounds="false" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight=".25"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Somebody did something in polotics today"
+            android:id="@+id/list_item_title"
+            android:layout_weight="1"
+            android:textSize="17dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="10/23/2015 12:39pm"
+                android:id="@+id/list_item_datetime"
+                android:layout_gravity="bottom"
+                android:gravity="left|bottom"
+                android:layout_weight=".4" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".6"
+                android:gravity="right"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:id="@+id/list_item_count_likes"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="2dp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/list_item_image_like"
+                    android:src="@drawable/like_heart_full_small"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:id="@+id/list_item_count_comments"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginRight="2dp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="12dp"
+                    android:id="@+id/list_item_image_comment"
+                    android:layout_gravity="bottom|right"
+                    android:src="@drawable/comment_small"
+                    android:layout_marginBottom="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
